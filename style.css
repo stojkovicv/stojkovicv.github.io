@@ -22,13 +22,14 @@
   
   .container {
     width: 100%;
-    max-width: 800px;
+    max-width: 940px;
   }
   
   .box {
     display: flex;
     gap: 40px;
   }
+  
   
   .column-1, .column-2 {
     flex: 1;
@@ -52,7 +53,7 @@
   }
 
   .column-2 h1 {
-    color: #FF5733;
+    color: rgb(173, 43, 43);
   }
 
   #myList {
@@ -86,6 +87,22 @@
     color: white;   
   }
   
+  .icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .icon-container a {
+    margin: 0 15px;
+    font-size: 24px;
+    color: white;
+  }
+  
+  #home-icon {
+    font-size: 24px;
+  }
   
   @keyframes fadeIn {
     from {
