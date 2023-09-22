@@ -1,0 +1,83 @@
+@font-face {
+    font-family: "Montserrat Regular";
+    src: url('./fonts/Montserrat-Regular.ttf') format('truetype');
+  }
+  
+  body {
+    background-color: #1d1d20;
+    color: white;
+    font-family: "Montserrat Regular", sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 800px;
+  }
+  
+  .box {
+    display: flex;
+    gap: 40px;
+  }
+  
+  .column-1, .column-2 {
+    flex: 1;
+    padding: 20px;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  
+  .column-1 h1, .column-2 h1 {
+    min-height: 50px;
+  }
+
+  .column-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;  /* Distributes space between header and list */
+  }
+
+  .column-2 h1 {
+    color: #FF5733;
+  }
+
+  #myList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* Horizontally centering items */
+    justify-content: center; /* Vertically centering items */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+  }
+  
+  #myList li {
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  
+  .project-description {
+    animation: fadeIn 1.8s;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
