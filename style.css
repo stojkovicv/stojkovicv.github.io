@@ -71,6 +71,13 @@
   .project-description {
     animation: fadeIn 1.8s;
   }
+
+  .github-icon {
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+  }
+  
   
   @keyframes fadeIn {
     from {
