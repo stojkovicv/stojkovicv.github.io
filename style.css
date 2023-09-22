@@ -69,13 +69,15 @@
   }
   
   .project-description {
-    animation: fadeIn 1.8s;
+    animation: fadeIn 3.5s;
   }
 
   .github-icon {
     display: block;
     margin-top: 10px;
     text-align: center;
+    font-size: 24px; /* Increase the font size */
+    color: white;
   }
   
   
