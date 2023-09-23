@@ -66,8 +66,8 @@
     margin: 0;
     display: flex;
     flex-direction: column;
-    align-items: center;  /* Horizontally centering items */
-    justify-content: center; /* Vertically centering items */
+    align-items: center;  /* horizontally centering items */
+    justify-content: center; /* vertically centering items */
     list-style-type: none;
     padding: 0;
     margin: 0;

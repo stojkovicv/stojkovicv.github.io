@@ -11,35 +11,30 @@ document.addEventListener("DOMContentLoaded", function() {
       let column1Paragraph = document.getElementById('column1-paragraph');
       let githubContainer = document.getElementById('github-container'); // Assuming you added this element in HTML
 
-      // Clear GitHub icon container
       githubContainer.innerHTML = "";
 
-      // Remove the existing animation class to re-trigger the animation
       column1Header.classList.remove('project-description');
       column1Paragraph.classList.remove('project-description');
 
-      // Update text content
       column1Header.textContent = header;
       column1Paragraph.textContent = paragraph;
 
-      // Add GitHub icon with hyperlink
       let githubIcon = document.createElement('a');
       githubIcon.href = githubUrl;
       githubIcon.target = "_blank";
       githubIcon.innerHTML = '<i class="fab fa-github"></i>';
-      githubIcon.className = 'github-icon'; // For styling purposes
+      githubIcon.className = 'github-icon';
       githubContainer.appendChild(githubIcon);
 
-      // Add the animation class to trigger the fadeIn animation
-      void column1Header.offsetWidth;  // Trigger reflow to restart animation
-      void column1Paragraph.offsetWidth;  // Trigger reflow to restart animation
+      void column1Header.offsetWidth;  
+      void column1Paragraph.offsetWidth;
       column1Header.classList.add('project-description');
       column1Paragraph.classList.add('project-description');
     }
   });
 });
 
-// JavaScript to copy email to clipboard
+// copy email to clipboard
 document.addEventListener('DOMContentLoaded', function() {
   const copyEmailButton = document.getElementById('copy-email-button');
   const emailAlert = document.getElementById('email-alert');
@@ -53,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.execCommand('copy');
     document.body.removeChild(el);
 
-    // Show alert and hide it after 2 seconds
+    // email alert
     emailAlert.className = 'email-alert-visible';
     setTimeout(() => {
       emailAlert.className = 'email-alert-hidden';
