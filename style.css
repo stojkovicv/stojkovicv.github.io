@@ -30,6 +30,9 @@
     gap: 40px;
   }
   
+  #column1-paragraph {
+    line-height: 1.5;
+  }
   
   .column-1, .column-2 {
     flex: 1;
