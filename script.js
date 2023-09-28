@@ -5,11 +5,11 @@ document.addEventListener("DOMContentLoaded", function() {
     if (e.target.tagName === 'LI') {
       let header = e.target.getAttribute('data-header');
       let paragraph = e.target.getAttribute('data-paragraph');
-      let githubUrl = e.target.getAttribute('data-github'); // Assume you've added a data-github attribute
+      let githubUrl = e.target.getAttribute('data-github');
 
       let column1Header = document.getElementById('column1-header');
       let column1Paragraph = document.getElementById('column1-paragraph');
-      let githubContainer = document.getElementById('github-container'); // Assuming you added this element in HTML
+      let githubContainer = document.getElementById('github-container');
 
       githubContainer.innerHTML = "";
 
