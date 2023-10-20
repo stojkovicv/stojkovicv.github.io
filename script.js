@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function() {
       column1Header.textContent = header;
       column1Paragraph.textContent = paragraph;
 
-      if (header !== "CRM System Maintenance") {
+      if (header !== "crm") {
         let githubIcon = document.createElement('a');
         githubIcon.href = githubUrl;
         githubIcon.target = "_blank";
