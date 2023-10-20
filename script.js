@@ -19,12 +19,14 @@ document.addEventListener("DOMContentLoaded", function() {
       column1Header.textContent = header;
       column1Paragraph.textContent = paragraph;
 
-      let githubIcon = document.createElement('a');
-      githubIcon.href = githubUrl;
-      githubIcon.target = "_blank";
-      githubIcon.innerHTML = '<i class="fab fa-github"></i>';
-      githubIcon.className = 'github-icon';
-      githubContainer.appendChild(githubIcon);
+      if (header !== "CRM System Maintenance") {
+        let githubIcon = document.createElement('a');
+        githubIcon.href = githubUrl;
+        githubIcon.target = "_blank";
+        githubIcon.innerHTML = '<i class="fab fa-github"></i>';
+        githubIcon.className = 'github-icon';
+        githubContainer.appendChild(githubIcon);
+      }
 
       void column1Header.offsetWidth;  
       void column1Paragraph.offsetWidth;
